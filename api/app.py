@@ -22,7 +22,7 @@ def generate_tokens_from_api():
             accounts = json.load(f)
 
         tokens = []
-        for acc in accounts:
+        for i, acc in enumerate(accounts[:10]):
             uid, pw = acc.get("uid"), acc.get("password")
             if not uid or not pw:
                 continue
