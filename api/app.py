@@ -148,6 +148,4 @@ def like_profile():
         return jsonify({"error": str(e)}), 500
 
 # ---------- 🚀 STARTUP ---------- #
-print("🚀 Generating initial tokens...")
-generate_tokens_from_api()
-auto_refresh_tokens(6)
+print("🚀 Initial token generation disabled (manual trigger only).")
