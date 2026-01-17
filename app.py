@@ -136,7 +136,7 @@ def make_request(encrypt, server_name, token):
             'Expect': "100-continue",
             'X-Unity-Version': "2018.4.11f1",
             'X-GA': "v1 1",
-            'ReleaseVersion': "OB51"
+            'ReleaseVersion': "OB52"
         }
         response = requests.post(url, data=edata, headers=headers, verify=False)
         hex_data = response.content.hex()
